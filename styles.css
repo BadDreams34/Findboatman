@@ -1,0 +1,17 @@
+canvas {
+    height:900px;
+    width: 1200px;
+}
+
+
+
+
+body {
+    background-size: cover;
+    background-position: top;
+}
+
+h4 {
+    margin-top: -900px;
+    font-size: 18px;
+}
