@@ -5,7 +5,7 @@ btn.addEventListener('click', async ()=>{
     const name = document.querySelector('#name').value
     const score = localStorage.getItem('score')
     const body = {name, score}
-    const res = await fetch('http://localhost:5010/add', {method: "POST", body: JSON.stringify(body), headers: {"Content-Type": "application/json"}})
+    const res = await fetch('findboatmanbackend-production.up.railway.app/add', {method: "POST", body: JSON.stringify(body), headers: {"Content-Type": "application/json"}})
 
     if (res.ok) {
         let data = await res.json()
