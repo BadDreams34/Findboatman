@@ -20,7 +20,7 @@ btn.addEventListener('click', async ()=>{
 })
 function render() {
     user.sort((a,b)=>{
-    return ( - b.Score + a.Score)
+    return ( - Number(b.Score) + Number(a.Score))
 })
  
 const ol = document.querySelector('.tab')
